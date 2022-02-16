@@ -35,6 +35,12 @@ const darkMode= document.getElementById("dark-mode")
 const resetBtn =document.getElementById('reset');
 
 
+/*----------------------------- Event Listeners -----------------------------*/
+cells.forEach(element => {
+  element.addEventListener('click',handleClick)
+  });
+
+
 /*---------------------------- Functions ----------------------------*/
 init()
 function init() {
@@ -115,10 +121,10 @@ function render() {
         const b = combo[1]
         const c = combo[2]
         const d = combo[3]
-       console.log( board[a]);
-       if(Math.abs(board[a]+board[b]+board[c]+board[d])===4){
-         return board[a];
-       }
+console.log( board[a]);
+if(Math.abs(board[a]+board[b]+board[c]+board[d])===4){
+return board[a];
+}
     
       if (board.includes(null)){
         return null
