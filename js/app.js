@@ -33,3 +33,6 @@ const gameBoardElement =document.querySelector('.grid');
 const gameStatus= document.getElementById("text")
 const darkMode= document.getElementById("dark-mode")
 const resetBtn =document.getElementById('reset');
+
+
+/*---------------------------- Functions ----------------------------*/
