@@ -81,3 +81,23 @@ function render() {
     }
     
   }
+
+  function handleClick(event) {
+    let cellIndex = parseInt(event.target.id)
+    if (board[cellIndex] || winner) {
+      return;
+    } else{
+      let upCells = 35 ;
+      while (board[cellIndex+upCells] !==null){
+      upCells -=7;
+    }
+    board[cellIndex+upCells] = turn;
+  }
+  
+    turn = turn * -1;
+    winner =findTheWinner()
+    console.log(winner+"Here");
+    render ()
+  
+  
+  }
