@@ -83,7 +83,7 @@ function render() {
   
     } else{
       gameStatus.innerText =`Congrats ${winner === 1 ? "Player red" : "Player yellow" } won  `
-      // confetti.start(2000)
+      confetti.start(2000)
     }
     
   }
