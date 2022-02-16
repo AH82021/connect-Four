@@ -101,3 +101,32 @@ function render() {
   
   
   }
+
+
+  function findTheWinner() {
+    for (let i = 0; i < winningCombos.length; i++){
+        let combo = winningCombos[i];
+        console.log(combo);
+        // for(let j= 0; j<combo.length;j++){
+        //   add += board[combo[j]]
+        //   console.log(add,board[combo[j]]);
+        // }
+        const a = combo[0]
+        const b = combo[1]
+        const c = combo[2]
+        const d = combo[3]
+       console.log( board[a]);
+       if(Math.abs(board[a]+board[b]+board[c]+board[d])===4){
+         return board[a];
+       }
+    
+      if (board.includes(null)){
+        return null
+      } else {
+        return winner ='T'
+      }
+      
+    } 
+  }
+
+  
