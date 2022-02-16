@@ -32,14 +32,16 @@ const cells =document.querySelectorAll('.cell')
 const gameBoardElement =document.querySelector('.grid');
 const gameStatus= document.getElementById("text")
 const darkMode= document.getElementById("dark-mode")
-const resetBtn =document.getElementById('reset');
+const resetBtn =document.getElementById('reset')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 cells.forEach(element => {
   element.addEventListener('click',handleClick)
   });
-
+ 
+  resetBtn.addEventListener('click', init)
+ 
 
 /*---------------------------- Functions ----------------------------*/
 init()
@@ -101,9 +103,7 @@ function render() {
   
     turn = turn * -1;
     findTheWinner()
-    console.log(winner+"Here");
     render ()
-  
   
   }
 
@@ -124,6 +124,11 @@ winner = board[a];
       }
       
     } 
+  }
+
+  function toggleLightMode() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
   }
 
   
