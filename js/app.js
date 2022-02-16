@@ -27,3 +27,9 @@ const winningCombos = [
 ]
 /*---------------------------- Variables (state) ----------------------------*/
 let turn , winner, board;
+/*------------------------ Cached Element References ------------------------*/
+const cells =document.querySelectorAll('.cell')
+const gameBoardElement =document.querySelector('.grid');
+const gameStatus= document.getElementById("text")
+const darkMode= document.getElementById("dark-mode")
+const resetBtn =document.getElementById('reset');
