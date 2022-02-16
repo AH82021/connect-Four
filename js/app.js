@@ -10,7 +10,7 @@ const winningCombos = [
   [3, 10, 17, 24],[38, 31, 24, 17],[4, 11, 18, 25],
   [37, 30, 23, 16],[5, 12, 19, 26],[36, 29, 22, 15],
   [6, 13, 20, 27],[35, 28, 21, 14],[0, 8, 16, 24],
-  [41, 33, 25, 17][7, 15, 23, 31],[34, 26, 18, 10],
+  [41, 33, 25, 17],[7, 15, 23, 31],[34, 26, 18, 10],
   [14, 22, 30, 38],[27, 19, 11, 3],[35, 29, 23, 17],
   [6, 12, 18, 24],[28, 22, 16, 10],[13, 19, 25, 31],
   [21, 15, 9, 3],[20, 26, 32, 38],[36, 30, 24, 18],
@@ -71,7 +71,7 @@ function render() {
     }
 
   });
-  findTheWinner()
+  // findTheWinner()
   renderText()
   }
   function renderText() {
@@ -101,7 +101,7 @@ function render() {
   }
   
     turn = turn * -1;
-    winner =findTheWinner()
+    findTheWinner()
     console.log(winner+"Here");
     render ()
   
@@ -123,13 +123,11 @@ function render() {
         const d = combo[3]
 console.log( board[a]);
 if(Math.abs(board[a]+board[b]+board[c]+board[d])===4){
-return board[a];
+winner = board[a];
 }
     
-      if (board.includes(null)){
-        return null
-      } else {
-        return winner ='T'
+      if (!board.includes(null)&& winner ===null){
+        winner = "T";
       }
       
     } 
