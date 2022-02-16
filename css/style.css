@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+  but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+/* resets font size to be 62.5% of the user preference - 
+in most browser configurations this will be 10px */
+:root {
+  font-size: 110%
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive; 
+  font-size: x-large;
+  text-align: center;
+  margin: 20px;
+}
+
+
+#text{
+display: flex;
+justify-content: center;
+height: 30px;
+font-family: 'Abril Fatface', cursive; 
+  font-size: x-large;
+  text-align: center;
+  margin: 20px;
+  text-decoration-style: solid;
+}
+.grid {
+  display: grid;
+  grid-template-columns:repeat(7,110px);
+  grid-template-rows:repeat(6,110px) ;
+  width: 770px;
+  height: 660px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: whitesmoke
+
+}
+.cell {
+ border:5px solid teal;
+ background-color: white;
+ border-radius: 50%;
+ outline:5px solid rgb(161, 93, 93);
+
+}
+
+.cell:hover {
+  background-color: cornflowerblue;
+}
+
+#dark-mode,  #resetButton {
+  background-color:rgb(41, 135, 126);
+  height: 40px;
+  width: 110px;
+  border-radius: 5%;
+  margin: 10px;
+  font-size: large;
+}
+
+
+.dark-mode {
+  background-color: rgb(26, 26, 27);
+  color: rgb(109, 163, 150);
+}
+
+.dark-mode .Grid {
+  background-color: rgb(12, 3, 20);
+}
+
+#buttons{
+  display: flex;
+  justify-content: center;
+}
