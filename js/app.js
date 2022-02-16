@@ -36,3 +36,48 @@ const resetBtn =document.getElementById('reset');
 
 
 /*---------------------------- Functions ----------------------------*/
+init()
+function init() {
+  board =[null,null,null,null,null,null,null,
+    null,null,null,null,null,null,null,
+    null,null,null,null,null,null,null,
+    null,null,null,null,null,null,null,
+    null,null,null,null,null,null,null,
+    null,null,null,null,null,null,null]
+
+  turn =1
+  winner =null;
+  gameStatus.textContent ="It is player red's turn"
+  render();
+  
+}
+
+function render() {
+  console.log(board);
+  board.forEach((cell,index) => {
+    if (cell === 1){
+      console.log(cell);
+      cells[index].style.backgroundColor = 'yellow'
+    }
+    else if (cell === -1) {
+      console.log(cell);
+      cells[index].style.backgroundColor = 'red'
+    }
+
+  });
+  findTheWinner()
+  renderText()
+  }
+  function renderText() {
+    if (!winner){
+      gameStatus.innerText =`It is Player ${turn ===1 ? "red" : "yellows"}'s turn ` ;
+  
+    } else if ( winner === "T"){
+      gameStatus.innerText =" It is a TIE , Try agian! ";
+  
+    } else{
+      gameStatus.innerText =`Congrats ${winner === 1 ? "Player red" : "Player yellow" } won  `
+      // confetti.start(2000)
+    }
+    
+  }
