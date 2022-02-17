@@ -33,7 +33,7 @@ const gameBoardElement =document.querySelector('.grid');
 const gameStatus= document.getElementById("text")
 const darkMode= document.getElementById("dark-mode")
 const resetBtn =document.getElementById('reset')
-
+let sound = new Audio('./sounds/kick-bass.mp3')
 
 /*----------------------------- Event Listeners -----------------------------*/
 cells.forEach(element => {
@@ -64,7 +64,8 @@ function render() {
   board.forEach((cell,index) => {
     if (cell === 1){
 
-      cells[index].style.backgroundColor = 'red'
+      cells[index].style.backgroundColor = 'red';
+      sound.play();
     }
     else if (cell === -1) {
 
