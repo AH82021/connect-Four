@@ -31,7 +31,7 @@ Desktop dispay :
 
 
 
- # Stretch Goals :🧊 U+1F9CA:
+ # Stretch Goals🧊 
 
 * Play against a computer 
 * More mobile friendly
