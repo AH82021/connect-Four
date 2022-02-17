@@ -109,5 +109,9 @@ font-family: 'Abril Fatface', cursive;
   .cell:hover {
     background-color: gray;
   }
+  #buttons{
+    display: flex;
+    justify-content: center;
+  }
 
 }
