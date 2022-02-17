@@ -55,7 +55,7 @@ function init() {
 
   turn =1
   winner =null;
-  gameStatus.textContent ="It is player red's turn"
+  gameStatus.textContent ="It is player  🔴   turn"
   render();
   
 }
@@ -77,13 +77,13 @@ function render() {
   }
   function renderText() {
     if (!winner){
-      gameStatus.innerText =`It is Player ${turn ===1 ? "red" : "yellows"}'s turn ` ;
+      gameStatus.innerText =`It is Player ${turn ===1 ? "🔴" : "🟡"}'s turn ` ;
   
     } else if ( winner === "T"){
-      gameStatus.innerText =" It is a TIE , Try agian! ";
+      gameStatus.innerText =" It is a TIE 🔴 🟡, Try agian! ";
   
     } else{
-      gameStatus.innerText =`Congrats ${winner === 1 ? "Player red" : "Player yellow" } won  `
+      gameStatus.innerText =`Congrats ${winner === 1 ? "Player 🔴" : "Player 🟡 " } won  `
       confetti.start(2000)
     }
     
