@@ -19,3 +19,7 @@ Desktop dispay :
 ![This is an image](./images/desktop%20display.png)
 
 
+# Languages 
+ *HTML <br>
+ *Javascript <br>
+ *CSS 
