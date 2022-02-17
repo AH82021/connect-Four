@@ -9,3 +9,7 @@ This a classic board Game Connect four is a two-player game where players altern
 Wireframe: 
 
 ![This is an image](./images/wireframe-4.png)
+
+
+display on small screens: 
+![This is an image](./images/mobile-display.jpg)
