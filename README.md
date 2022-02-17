@@ -13,3 +13,9 @@ Wireframe:
 
 display on small screens: 
 ![This is an image](./images/mobile-display.jpg)
+
+
+Desktop dispay :
+![This is an image](./images/desktop%20display.png)
+
+
