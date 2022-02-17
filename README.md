@@ -31,8 +31,9 @@ Desktop dispay :
 # credits🙏 
 
   Google Fonts 
-  [Visit website] (https://https://fonts.google.com/) 
-  [Visit website] (https://freesound.org) 
+  [Visit website](https://https://fonts.google.com/) <br>
+  Freesound.org
+  [Visit website](https://freesound.org) 
   
 
 
