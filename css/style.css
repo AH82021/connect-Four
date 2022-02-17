@@ -97,13 +97,14 @@ font-family: 'Abril Fatface', cursive;
   background-color: cornflowerblue;
   color: brown;
   }
-  #dark-mode,  #reset {
+  #dark-mode,  #reset ,#buttons {
     background-color:rgb(41, 135, 126);
     height: 60px;
     width: 110px;
     border-radius: 5%;
     margin: 10px;
     font-size: large;
+    color: black;
   }
   .cell:hover {
     background-color: gray;
