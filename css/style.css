@@ -92,7 +92,7 @@ font-family: 'Abril Fatface', cursive;
     grid-template-columns:repeat(7,60px);
     grid-template-rows:repeat(6,60px) ;
     width:250px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   background-color: cornflowerblue;
   color: brown;
