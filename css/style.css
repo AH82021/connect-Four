@@ -97,7 +97,7 @@ font-family: 'Abril Fatface', cursive;
   background-color: cornflowerblue;
   color: brown;
   }
-  #dark-mode,  #reset ,#buttons {
+  #dark-mode,  #reset  {
     background-color:rgb(41, 135, 126);
     height: 60px;
     width: 110px;
