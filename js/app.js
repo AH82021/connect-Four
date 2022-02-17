@@ -67,11 +67,13 @@ function render() {
     if (cell === 1){
 
       cells[index].style.backgroundColor = 'red';
+      sound.volume = .5
       sound.play();
     }
     else if (cell === -1) {
 
       cells[index].style.backgroundColor = 'yellow'
+      sound.volume = .5
       sound.play();
     }else{
       cells[index].style.backgroundColor = 'white'
@@ -91,6 +93,7 @@ function render() {
     } else{
       gameStatus.innerText =`Congrats ${winner === 1 ? "Player 🔴" : "Player 🟡 " } won  `
       confetti.start(2000)
+      winsound.volume = .5
       winsound.play();
     }
     
