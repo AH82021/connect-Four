@@ -6,4 +6,6 @@ This a classic board Game Connect four is a two-player game where players altern
 
 [Play the game here ](https://ah82021.github.io/connect-Four/).
 
+Wireframe: 
 
+![This is an image](./images/wireframe-4.png)
