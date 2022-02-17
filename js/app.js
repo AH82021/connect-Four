@@ -34,6 +34,8 @@ const gameStatus= document.getElementById("text")
 const darkMode= document.getElementById("dark-mode")
 const resetBtn =document.getElementById('reset')
 let sound = new Audio('./sounds/kick-bass.mp3')
+let winsound = new Audio('./sounds/youwin7.ogg')
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 cells.forEach(element => {
@@ -88,6 +90,7 @@ function render() {
     } else{
       gameStatus.innerText =`Congrats ${winner === 1 ? "Player 🔴" : "Player 🟡 " } won  `
       confetti.start(2000)
+      winsound.play();
     }
     
   }
