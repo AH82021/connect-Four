@@ -33,8 +33,8 @@ const gameBoardElement =document.querySelector('.grid');
 const gameStatus= document.getElementById("text")
 const darkMode= document.getElementById("dark-mode")
 const resetBtn =document.getElementById('reset')
-let sound = new Audio('./sounds/kick-bass.mp3')
-let winsound = new Audio('./sounds/youwin7.ogg')
+const sound = new Audio('./sounds/kick-bass.mp3')
+const winsound = new Audio('./sounds/youwin7.ogg')
 
 
 /*----------------------------- Event Listeners -----------------------------*/
