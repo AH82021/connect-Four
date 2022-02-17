@@ -63,12 +63,14 @@ function init() {
 function render() {
   board.forEach((cell,index) => {
     if (cell === 1){
-      console.log(cell);
+
       cells[index].style.backgroundColor = 'red'
     }
     else if (cell === -1) {
-      console.log(cell);
+
       cells[index].style.backgroundColor = 'yellow'
+    }else{
+      cells[index].style.backgroundColor = 'white'
     }
 
   });
