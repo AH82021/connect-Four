@@ -72,6 +72,7 @@ function render() {
     else if (cell === -1) {
 
       cells[index].style.backgroundColor = 'yellow'
+      sound.play();
     }else{
       cells[index].style.backgroundColor = 'white'
     }
